@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
+#Goo, #Java,#Php,#Python,#Node,#Ruby,
+#R,#C,#Cplus,#Matlab,#Rust,#React,#Perl,#Typescript,#Sql{
+  display: none;
+}
+
+#maintitle{
+    font-family: 'M PLUS 1', sans-serif;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-weight: 400;
+}
+
+.dropdown-form {
+height:10px;
+  width:110px;
+  border-radius:6px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+select {
+    padding: 1px;
+    margin-top: -7;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'M PLUS 1', sans-serif;
+  
+}
+
+option{
+margin: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+ 
+}
+
+.mainWindow{
+    height: auto;
+    width: 850px;
+    background-color: transparent;
+    border: 0.5px solid black;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+hr{
+  border: 0;
+    height: 0;
+    width:100%;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+p{
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 700px;
+    font-size: 15px;
+    padding-left: 20px;
+    font-size: 13px;
+}
+.codeBlock{
+      height: auto;
+      width: 850px;
+}
+
+#moreInfo{
+    text-decoration: none;
+    color: #2e86f2;
+}
+
+
+
+.code{
+    background-color: #dfe2e8;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    font-weight: bold;
+}
+
+#inputTexts{
+    background-color: #dfe2e8;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+.code button{
+    width: auto;
+    padding-top:1px;
+    padding-bottom: 18px;
+    border: none;
+    outline: none;
+    height: auto;
+    float: right;
+    font-size: 18px;
+    background-color: #dfe2e8;
+}
+
+.dark-theme .code{
+    background-color: #283142;
+    color: white;
+}
+.dark-theme #inputTexts{
+    background-color: #283142;
+    color: white;
+}
+.dark-theme .code button{
+    background-color: #283142;
+    color: white;
+}
+.change-theme{
+    font-size: 1.25rem;
+    cursor:pointer;
+    transition:.3s;
+    border-radius: 16px;
+}
+  
+.change-theme:hover{
+    color:grey;
+}
+
+.cloudCode{
+    list-style-type: disc;
+    border: none;
+}
+
+#note{
+    background-color: #e1f5fe;
+    color: #01579b;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+a{
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 700px;
+    font-size: 15px;
+}
+
+pre{
+    margin-left: 10px;
+    color: \003c#2e86f2; 	
+}
+

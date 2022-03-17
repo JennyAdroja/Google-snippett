@@ -1,0 +1,203 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Speech-to-Text Libraries</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+    <h2 id="maintitle">Installing the Client Library</h2>
+    <div class="mainWindow">
+        <div id="mainView" >
+      
+      <div class="dropdown-form">
+        
+          <select name="Menu" onchange="HiddenElements(this)" id="menuSelect">
+            <option value="option1"></option>
+          <option value="Csharp">C#</option>
+          <option value="Goo">Go</option>
+          <option value="Java">Java</option>
+          <option value="Php">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Node">Node.js</option>
+          <option value="Ruby">Ruby</option>
+          <option value="R">R</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="Matlab">Matlab</option>
+          <option value="Rust">Rust</option>
+          <option value="React">React.js</option>
+          <option value="Perl">Perl</option>
+          <option value="Typescript">Typescript</option>
+          <option value="Sql">Sql</option>
+        </select>
+      </div>
+          <hr>
+      
+      <div class="codeBlock">
+             <div id="Csharp" class="show-hide">
+                        <p> For more information, see <a href="https://cloud.google.com/dotnet/docs/setup" id="moreInfo" >Setting up a C# Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                        <p> If you are using Visual Studio 2017 or higher, open nuget package manager window and type the following:</p>
+                        <div class="code">
+                            <button> 
+                                <i class='bx bx-brightness-half change-theme' id="theme-button" ></i>
+                                <i class='bx bx-copy'></i>
+                               
+                            </button>
+                            <p readonly id="inputTexts">Install-Package Google.Apis"
+                           </p>
+                        </div>
+                        <p>If you are using .NET Core command-line interface tools to install your dependencies, run the following command:</p> 
+                        <div class="code">
+                            <button> 
+                                <i class='bx bx-brightness-half change-theme' id="theme-button" ></i>
+                                <i class='bx bx-copy' ></i>
+                            </button>
+                            <p readonly id="inputTexts">dotnet add package Google.Apis"
+                            </p>
+                        </div>    
+        </div>
+                    <!--============ Go block ==================-->
+        <div id="Goo" class="show-hide"> 
+                      <p> For more information, see <a href="https://cloud.google.com/go/docs/setup" id="moreInfo">Setting up a Go Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                      <p> If you are using Visual Studio 2017 or higher, open nuget package manager window and type the following:</p>
+                      <div class="code">
+                        <button> 
+                            <i class='bx bx-brightness-half change-theme' id="theme-button" ></i>
+                            <i class='bx bx-copy' ></i>
+                        </button>
+                        <p readonly id="inputTexts"> Install-Package Google.Apis"
+                          </p>
+                             
+                          
+                      </div>
+        </div>
+                  <!--=============== Java block ===============-->
+        <div  id="Java" class="show-hide">
+                       <p> For more information, see <a href="https://cloud.google.com/java/docs/setup" id="moreInfo">Setting up a Java Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                      <p> If you are using <a href="https://maven.apache.org/" id="moreInfo"> Maven <i class="fa-solid fa-arrow-up-right-from-square"></i></a>, add the following to your pom.xml file. For more information about BOMs, 
+                          see <a href="https://github.com/GoogleCloudPlatform/cloud-opensource-java/wiki/The-Google-Cloud-Platform-Libraries-BOM" id="moreInfo">The Google Cloud Platform Libraries BOM.<i class='bx bx-link-external' ></i></a></p>
+                      <div class="code">
+                        <button>
+                            <i class='bx bx-brightness-half change-theme' id="theme-button"></i>
+                            <i class='bx bx-copy'></i>
+                          </button>
+                        <p readonly>
+                            <pre>
+&lt;dependencyManagement&gt;
+ &lt;dependencies&gt;
+  &lt;dependency&gt;
+   &lt;groupId&gt;com.google.cloud&lt;/groupId&gt;
+   &lt;artifactId&gt;libraries-bom&lt;/artifactId&gt;
+   &lt;version&gt;24.4.0&lt;/version&gt;
+   &lt;type&gt;pom&lt;/type&gt;
+   &lt;scope&gt;import&lt;/scope&gt;
+  &lt;/dependency&gt;
+ &lt;/dependencies&gt;
+&lt;/dependencyManagement&gt;
+                                        
+&lt;dependencies&gt;
+ &lt;dependency&gt;
+    &lt;groupId&gt;org.json&lt;/groupId&gt;
+    &lt;artifactId&gt;json&lt;/artifactId&gt;
+    &lt;version&gt;20211205&lt;/version&gt;
+ &lt;/dependency&gt;
+ &lt;dependency&gt;
+    &lt;groupId&gt;com.google.cloud&lt;/groupId&gt;
+    &lt;artifactId&gt;google-cloud-speech&lt;/artifactId&gt;
+ &lt;/dependency&gt;
+&lt;/dependencies&gt;
+                          
+                            </pre>
+                            
+                            </p>
+                      </div>
+                      <p>If you are using  <a href="https://gradle.org/" id="moreInfo">Gradle<i class='bx bx-link-external' ></i></a>, add the following to your dependencies:</p> 
+                      <div class="code">
+                        <button> 
+                            <i class='bx bx-brightness-half change-theme' id="theme-button" ></i>
+                            <i class='bx bx-copy' ></i>
+                        </button>
+                        <p readonly id="inputTexts"> implementation platform('com.google.cloud:libraries-bom:24.4.0')" </p>
+                        <p readonly id="inputTexts">value=" implementation 'com.google.cloud:google-cloud-speech'"
+                        </p>
+                      </div>
+                      <p>If you are using  <a href="https://www.scala-sbt.org/" id="moreInfo">sbt<i class='bx bx-link-external' ></i></a>, add the following to your dependencies:</p> 
+                      <div class="code">
+                        <button> 
+                            <i class='bx bx-brightness-half change-theme' id="theme-button" ></i>
+                            <i class='bx bx-copy' ></i>
+                        </button>
+                        <p readonly id="inputTexts">libraryDependencies += com.google.cloud % 'google-cloud-speech' % '2.2.9'"
+                          </p>
+                      </div>
+                      <p>
+                          If you're using Visual Studio Code, IntelliJ, or Eclipse, you can add client libraries to your project using the following IDE plugins:</p>
+                          <ul >
+                              <li class="cloudCode"><a href="https://cloud.google.com/code/docs/vscode/client-libraries" id="moreInfo"> Code for VS Code</a></li>
+                              <li class="cloudCode"><a href="https://cloud.google.com/code/docs/intellij/client-libraries" id="moreInfo"> Code for IntelliJ</a></li>
+                              <li class="cloudCode"><a href="https://cloud.google.com/eclipse/docs/libraries" id="moreInfo">Cloud Tools for Eclipse</a></li>
+                          </ul>
+                          <p>The plugins provide additional functionality, such as key management for service accounts. Refer to each plugin's documentation for details.
+                      </p>
+                      <p id="note"> <i class='bx bxs-star'></i> Note: Cloud Java client libraries do not currently support Android.</p>
+        </div>
+                  <!--=============== Node.Js block ===============-->
+        <div id="Node" class="show-hide"> 
+                      <p> For more information, see <a href="https://cloud.google.com/nodejs/docs/setup" id="moreInfo">Setting up a Node.js Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                      <div class="code">
+                        <button> 
+                            <i class='bx bx-brightness-half change-theme' id="theme-button" ></i>
+                            <i class='bx bx-copy' ></i>
+                        </button>
+                        <p readonly id="inputTexts">npm install --save @google-cloud/speech"
+                         </p>
+                      </div>
+        </div>
+                  <!--=============== PHP block ===============-->
+        <div id="Php" class="show-hide"> 
+                      <p> For more information, see <a href="https://cloud.google.com/php/docs" id="moreInfo">Using PHP on Google Cloud.<i class='bx bx-link-external' ></i></a></p>
+                      <div class="code">
+                        <button> 
+                            <i class='bx bx-brightness-half change-theme' id="theme-button" ></i>
+                            <i class='bx bx-copy' ></i>
+                        </button>
+                        <p readonly id="inputTexts">composer require google/apiclient
+                          </p>
+                      </div>
+        </div>
+                  <!--=============== Python block ===============-->
+        <div id="Python" class="show-hide"> 
+                      <p> For more information, see <a href="https://cloud.google.com/python/docs/setup" id="moreInfo">Setting up a Python Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                      <div class="code">
+                        <button> 
+                            <i class='bx bx-brightness-half change-theme' id="theme-button" ></i>
+                            <i class='bx bx-copy' ></i>
+                        </button>
+                        <p readonly id="inputTexts"> pip install --upgrade google-cloud-speech
+                          </p>
+                      </div>
+        </div>
+                  <!--=============== Ruby block ===============-->
+        <div id="Ruby" class="show-hide"> 
+                      <p> For more information, see <a href="https://cloud.google.com/ruby/docs/setup" id="moreInfo">Setting up a Ruby Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                      <div class="code">
+                        <button> 
+                            <i class='bx bx-brightness-half change-theme' id="theme-button" ></i>
+                            <i class='bx bx-copy' ></i>
+                        </button> 
+                        <p readonly id="inputTexts"> gem install google-api-client
+                        
+                          </p>
+                      </div>
+        </div>
+      </div>
+    
+    </div>
+      </div>
+    <script src="assets/js/script.js"></script>
+    </body>
+    </html>
