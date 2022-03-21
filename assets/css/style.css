@@ -83,7 +83,7 @@ p{
     font-weight: bold;
 }
 
-#inputTexts{
+.codeText{
     background-color: #dfe2e8;
     width: auto;
     margin-top: 10px;

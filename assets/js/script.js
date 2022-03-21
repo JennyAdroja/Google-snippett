@@ -12,11 +12,11 @@ window.onload=function() {
   divsO = document.getElementById("mainView").getElementsByClassName('show-hide');
 };
 
-var ele = "Csharp";
+var eleMentss = "Csharp";
 var menuSelect = document.getElementById('menuSelect');
 
 for(var i, j = 0; i = menuSelect.options[j]; j++) {
-  if(i.value == ele) {
+  if(i.value == eleMentss) {
     menuSelect.selectedIndex = j;
     break;
   }
@@ -51,10 +51,15 @@ themeButton.addEventListener('click',() =>{
 
 //COPY TO CLIPBOARD//
 
-const inputTexts=document.getElementById("inputTexts");
-const btnCopy=document.getElementById("btnCopy");
 
-btnCopy.onclick=function(){
-  inputTexts.select();
-  document.execCommand("Copy");
+function CopyToClipboard(id)
+{
+var textblock = document.createRange();
+textblock.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(textblock);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+alert("Copied");
 }
+

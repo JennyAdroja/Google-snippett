@@ -12,7 +12,6 @@
     <h2 id="maintitle">Installing the Client Library</h2>
     <div class="mainWindow">
         <div id="mainView" >
-            <i class='btn bx bx-copy '></i>
             <i class='bx bx-brightness-half change-theme' id="theme-button" ></i>
             <div class="dropdown-form"> 
           <select class="Menu search dropdown" onchange="HiddenElements(this)" id="menuSelect">
@@ -43,18 +42,18 @@
       
       <div class="codeBlock">
              <div id="Csharp" class="show-hide">
-                        <p> For more information, see <a href="https://cloud.google.com/dotnet/docs/setup" id="moreInfo" >Setting up a C# Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                        <p> For more information, see <a href="https://cloud.google.com/dotnet/docs/setup" id="moreInfo" >Setting up a C# Development Enviroment.</a></p>
                         <p> If you are using Visual Studio 2017 or higher, open nuget package manager window and type the following:</p>
                        
                         <div class="code ">
-                        
-                            <p readonly id="inputTexts">Install-Package Google.Apis
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts');"></i></button>
+                            <p readonly id="inputTexts" class="codeText">Install-Package Google.Apis
                            </p>
                         </div>
                         <p>If you are using .NET Core command-line interface tools to install your dependencies, run the following command:</p> 
                         <div class="code ">
-                         
-                            <p readonly id="inputTexts">dotnet add package Google.Apis
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts1');"></i></button>
+                            <p readonly id="inputTexts1" class="codeText">dotnet add package Google.Apis
                             </p>
                         </div>
              
@@ -64,11 +63,12 @@
         </div>
                     <!--============ Go block ==================-->
         <div id="Goo" class="show-hide"> 
-                      <p> For more information, see <a href="https://cloud.google.com/go/docs/setup" id="moreInfo">Setting up a Go Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                      <p> For more information, see <a href="https://cloud.google.com/go/docs/setup" id="moreInfo">Setting up a Go Development Enviroment.</a></p>
                       <p> If you are using Visual Studio 2017 or higher, open nuget package manager window and type the following:</p>
                      
                       <div class="code">
-                        <p readonly id="inputTexts"> go get cloud.google.com/go/speech/apiv1
+                        <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts2');"></i></button>
+                        <p readonly id="inputTexts2" class="codeText"> go get cloud.google.com/go/speech/apiv1
                           </p>
                       </div>
                    
@@ -78,12 +78,13 @@
                </div>
                   <!--=============== Java block ===============-->
              <div  id="Java" class="show-hide">
-                       <p> For more information, see <a href="https://cloud.google.com/java/docs/setup" id="moreInfo">Setting up a Java Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                       <p> For more information, see <a href="https://cloud.google.com/java/docs/setup" id="moreInfo">Setting up a Java Development Enviroment.</a></p>
                       <p> If you are using <a href="https://maven.apache.org/" id="moreInfo"> Maven <i class='bx bx-link-external' ></i></a>, add the following to your pom.xml file. For more information about BOMs, 
                           see <a href="https://github.com/GoogleCloudPlatform/cloud-opensource-java/wiki/The-Google-Cloud-Platform-Libraries-BOM" id="moreInfo">The Google Cloud Platform Libraries BOM.<i class='bx bx-link-external' ></i></a></p>
                       <div class="code">
-                        <p readonly id="inputTexts">
-                            <pre>
+                        <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts3');"></i></button>
+                        <p readonly class="codeText">
+                            <pre id="inputTexts3">
 &lt;dependencyManagement&gt;
  &lt;dependencies&gt;
   &lt;dependency&gt;
@@ -114,16 +115,16 @@
                       </div>
                       <p>If you are using  <a href="https://gradle.org/" id="moreInfo">Gradle<i class='bx bx-link-external' ></i></a>, add the following to your dependencies:</p> 
                       <div class="code">
-                       
-                        <p readonly id="inputTexts"> implementation platform('com.google.cloud:libraries-bom:24.4.0')" </p>
-                        <p readonly id="inputTexts">
+                        <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts31');"></i></button>
+                        <p readonly id="inputTexts31" class="codeText"> implementation platform('com.google.cloud:libraries-bom:24.4.0')" </p>
+                        <p readonly id="inputTexts31" class="codeText">
                           implementation 'com.google.cloud:google-cloud-speech'
                         </p>
                       </div>
                       <p>If you are using  <a href="https://www.scala-sbt.org/" id="moreInfo">sbt<i class='bx bx-link-external' ></i></a>, add the following to your dependencies:</p> 
-                      <div class="code">
-                      
-                        <p readonly id="inputTexts">libraryDependencies += com.google.cloud % 'google-cloud-speech' % '2.2.9'"
+                      <div class="code" >
+                        <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts32');"></i></button>
+                        <p readonly id="inputTexts32" class="codeText">libraryDependencies += com.google.cloud % 'google-cloud-speech' % '2.2.9'"
                           </p>
                       </div>
                       <p>
@@ -139,141 +140,141 @@
                       </div>
                   <!--=============== Node.Js block ===============-->
                       <div id="Node" class="show-hide"> 
-                      <p> For more information, see <a href="https://cloud.google.com/nodejs/docs/setup" id="moreInfo">Setting up a Node.js Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                      <p> For more information, see <a href="https://cloud.google.com/nodejs/docs/setup" id="moreInfo">Setting up a Node.js Development Enviroment.</a></p>
                       <div class="code">
-                       
-                        <p readonly id="inputTexts">npm install --save @google-cloud/speech"
+                        <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts4');"></i></button>
+                        <p readonly id="inputTexts4" class="codeText">npm install --save @google-cloud/speech"
                          </p>
                       </div>
                     </div>
                   <!--=============== PHP block ===============-->
                    <div id="Php" class="show-hide"> 
-                      <p> For more information, see <a href="https://cloud.google.com/php/docs" id="moreInfo">Using PHP on Google Cloud.<i class='bx bx-link-external' ></i></a></p>
+                      <p> For more information, see <a href="https://cloud.google.com/php/docs" id="moreInfo">Using PHP on Google Cloud.</a></p>
                       <div class="code">
-                       
-                        <p readonly id="inputTexts">composer require google/apiclient
+                        <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts5');"></i></button>
+                        <p readonly id="inputTexts5" class="codeText">composer require google/apiclient
                           </p>
                       </div>
                      </div>
                   <!--=============== Python block ===============-->
                     <div id="Python" class="show-hide"> 
-                      <p> For more information, see <a href="https://cloud.google.com/python/docs/setup" id="moreInfo">Setting up a Python Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                      <p> For more information, see <a href="https://cloud.google.com/python/docs/setup" id="moreInfo">Setting up a Python Development Enviroment.</a></p>
                       <div class="code">
-                      
-                        <p readonly id="inputTexts"> pip install --upgrade google-cloud-speech
+                        <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts6');"></i></button>
+                        <p readonly id="inputTexts6" class="codeText"> pip install --upgrade google-cloud-speech
                           </p>
                       </div>
                     </div>
                   <!--=============== Ruby block ===============-->
                      <div id="Ruby" class="show-hide"> 
-                      <p> For more information, see <a href="https://cloud.google.com/ruby/docs/setup" id="moreInfo">Setting up a Ruby Development Enviroment.<i class='bx bx-link-external' ></i></a></p>
+                      <p> For more information, see <a href="https://cloud.google.com/ruby/docs/setup" id="moreInfo">Setting up a Ruby Development Enviroment.</a></p>
                       <div class="code">
-                        
-                        <p readonly id="inputTexts"> gem install google-api-client</p>
+                        <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts7');"></i></button>
+                        <p readonly id="inputTexts9" class="codeText"> gem install google-api-client</p>
                       </div>
                      </div>
                      <!--=============== R block ===============-->
                      <div id="R" class="show-hide"> 
                       <p> An Instance for R</p>
                       <div class="code">
-                       
-                        <p readonly id="inputTexts"> An Instance for R</p>
+                        <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts8');"></i></button>
+                        <p readonly id="inputTexts8" class="codeText"> An Instance for R</p>
                       </div>
                      </div>  
                       <!--=============== C block ===============-->
                       <div id="C" class="show-hide"> 
                         <p> An Instance for C Language</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for C Language</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts9');"></i></button>
+                          <p readonly id="inputTexts9" class="codeText"> An Instance for C Language</p>
                         </div>
                        </div>  
                        <!--=============== C++ block ===============-->
                       <div id="Cplus" class="show-hide"> 
                         <p> An Instance for C++</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for C++</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts10');"></i></button>
+                          <p readonly id="inputTexts10" class="codeText"> An Instance for C++</p>
                         </div>
                        </div>  
                         <!--=============== Matlab block ===============-->
                       <div id="Matlab" class="show-hide"> 
                         <p> An Instance for Matlab</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for Matlab</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts11');"></i></button>
+                          <p readonly id="inputTexts11" class="codeText"> An Instance for Matlab</p>
                         </div>
                        </div>  
                         <!--=============== Rust block ===============-->
                       <div id="Rust" class="show-hide"> 
                         <p> An Instance for Rust</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for Rust</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts12');"></i></button>
+                          <p readonly id="inputTexts12" class="codeText"> An Instance for Rust</p>
                         </div>
                        </div>  
                         <!--=============== React block ===============-->
                       <div id="React" class="show-hide"> 
                         <p> An Instance for React.js</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for React.js</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts13');"></i></button>
+                          <p readonly id="inputTexts13" class="codeText"> An Instance for React.js</p>
                         </div>
                        </div> 
                        <!--=============== Perl block ===============-->
                       <div id="Perl" class="show-hide"> 
                         <p> An Instance for Perl</p>
                         <div class="code">
-                          
-                          <p readonly id="inputTexts"> An Instance for Perl</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts14');"></i></button>
+                          <p readonly id="inputTexts14" class="codeText"> An Instance for Perl</p>
                         </div>
                        </div> 
                        <!--=============== Typescript block ===============-->
                       <div id="Typescript" class="show-hide"> 
                         <p> An Instance for Typescript</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for Typescript</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts15');"></i></button>
+                          <p readonly id="inputTexts15" class="codeText"> An Instance for Typescript</p>
                         </div>
                        </div> 
                        <!--=============== SQL block ===============-->
                       <div id="Sql" class="show-hide"> 
                         <p> An Instance for SQL</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for SQL</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts16');"></i></button>
+                          <p readonly id="inputTexts16" class="codeText"> An Instance for SQL</p>
                         </div>
                        </div> 
                         <!--=============== Angular block ===============-->
                       <div id="Angular" class="show-hide"> 
                         <p> An Instance for Angular</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for Angular</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts17');"></i></button>
+                          <p readonly id="inputTexts17" class="codeText"> An Instance for Angular</p>
                         </div>
                        </div> 
                         <!--=============== Kotlin block ===============-->
                       <div id="Kotlin" class="show-hide"> 
                         <p> An Instance for Kotlin</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for Kotlin</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts18');"></i></button>
+                          <p readonly id="inputTexts18" class="codeText"> An Instance for Kotlin</p>
                         </div>
                        </div> 
                         <!--=============== Swift block ===============-->
                       <div id="Swift" class="show-hide"> 
                         <p> An Instance for Swift</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for Swift</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts19');"></i></button>
+                          <p readonlyid="inputTexts19" class="codeText"> An Instance for Swift</p>
                         </div>
                        </div> 
                        <!--=============== Dart block ===============-->
                       <div id="Dart" class="show-hide"> 
                         <p> An Instance for Dart</p>
                         <div class="code">
-                         
-                          <p readonly id="inputTexts"> An Instance for Dart</p>
+                          <button> <i class=' bx bx-copy ' onclick="CopyToClipboard('inputTexts20');"></i></button>
+                          <p readonly id="inputTexts20" class="codeText"> An Instance for Dart</p>
                         </div>
                        </div> 
   </div>
