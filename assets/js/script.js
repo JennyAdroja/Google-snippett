@@ -22,6 +22,10 @@ for(var i, j = 0; i = menuSelect.options[j]; j++) {
   }
 }
 
+
+
+//DARK THEME//
+
 const themeButton=document.getElementById('theme-button')
 const darkTheme='dark-theme'
 const iconTheme='bx-brightness-full'
@@ -45,22 +49,12 @@ themeButton.addEventListener('click',() =>{
     localStorage.setItem('selected-icon',getCurrentIcon())
 })
 
+//COPY TO CLIPBOARD//
 
-const answer = document.getElementById("copyResult");
-const copy   = document.getElementById("copyButton");
-const selection = window.getSelection();
-const range = document.createRange();
-const textCopy = document.getElementByClass("code")
+const inputTexts=document.getElementById("inputTexts");
+const btnCopy=document.getElementById("btnCopy");
 
-copy.addEventListener('click', function(e) {
-    range.selectNodeContents(textCopy);
-    selection.removeAllRanges();
-    selection.addRange(range);
-    const successful = document.execCommand('copy');
-    if(successful){
-      answer.innerHTML = 'Copied!';
-    } else {
-      answer.innerHTML = 'Unable to copy!';  
-    }
-    window.getSelection().removeAllRanges()
-});
+btnCopy.onclick=function(){
+  inputTexts.select();
+  document.execCommand("Copy");
+}
