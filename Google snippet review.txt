@@ -1,8 +1,0 @@
--The google snippet review was designed assuming 20 languages.
--On the original website i noticed that the links were placed horizontally.
-      If there were more languages to be added it would not be a pleasent experience to the user
-      accessing it
-- So i designed it using a dropdown whichis easy to use and understand.
-- I also added a dark theme button and copy to clipboard.
-- The design is compatible on smaller screens.
-- There is also a search in the DropDown which will search from first letter.
